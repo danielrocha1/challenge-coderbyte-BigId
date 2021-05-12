@@ -12,9 +12,8 @@ def game(scene):
     for ind, num in enumerate(game):
         if num == enemy:
          enemy_location.append(ind)
-    for indi, num_p in enumerate(game):
-        if num_p == player:
-         player_location = indi
+        if num == player:
+         player_location = ind
     for move in enemy_location:
         if move < player_location:
             res = player_location - move
@@ -25,9 +24,4 @@ def game(scene):
             result = resu -1
             final.append(result)
 
-    return min(final)
-
-
-
-
-
+    return min(final)	
