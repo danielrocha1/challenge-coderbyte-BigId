@@ -14,4 +14,3 @@ def runlenght(arg):
             count += 1
     result += str(count) +  last_char
     return result
-print(runlenght(arg))
